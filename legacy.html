@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="shortcut icon" href="">
+        <meta charset="utf-8">
+        <title>User Inerface</title>
+        <meta name = "viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <style type = "text/css">
+        
+        body{
+            
+            background-image:url(http://bluemonkeylab.com/wp-content/uploads/2013/10/11.jpg);
+            background-repeat:no-repeat;
+            height: 100vh;
+            background-attachment:fixed;
+            background-color: azure;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                }
+
+            li {
+                float: left;
+            }
+
+            li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+                }
+
+            li a:hover {
+            background-color: #111;
+            }
+            
+            a:active {
+            background-color: blanchedalmond;
+            }
+            li a:visited {
+            background-color: dimgray;
+        }
+        h4 {
+            list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            
+        }
+        
+        div {
+            text-align: justify;
+            text-justify: newspaper
+        }
+        
+        
+    </style>
+    
+    <body>
+        <p>
+            <img src="https://www.rc.colorado.edu/sites/default/files/cuboulder-large.png" style= "PADDING-TOP: 5px" width=100px height=100px align="right"></i> 
+                     <center><strong><H2>Network Automation Using SDN and DevOps</H2></strong></center>
+                    <center><strong><H2>Team 15</H2></strong></center></p>                       
+                 <center><ul><b>
+                     <li style=" padding-left: 45%"><a href="cap">Home</a></li>
+                    
+                     <li><a href="contact">Contact</a></li>
+                     </center></ul></b><br><br>
+        
+                 <form action="/legacy" method="POST">
+                     
+                     Starting IP address of the devices to be configured: <font color=red>*</font><br><font size = "5"></font><input type="text" name="managementIP" maxlength="30" size="25" ><br><br>
+                     
+                     Number of devices to be configured if the range is continuous: <font color=red>*</font><br><font size = "5"></font><input type="text" name="devicerange" maxlength="30" size="25" ><br><br>
+                    
+                     <table>
+                         <tr>
+                            <th>Action</th>
+                            <th>Protocol</th> 
+                            <th>Port number</th>
+                        </tr>
+                         <tr>
+                            <td><select name="permission">
+                                <option value="permit">Deny</option>
+                                <option value="deny">Permit</option>
+                     </select></td>
+                            <td><select name="protocol">
+                                <option value="TCP">TCP</option>
+                                <option value="UDP">UDP</option>
+                                <option value="ICMP">ICMP</option>
+                     </select></td>
+                            <td><input type="text" name="port_no"></td>
+                             </tr>
+                    
+                     </table><br>
+                        <table>
+                            <tr>
+                            <th></font>Source IP</th>
+                            <th></font>Subnet Mask</th> 
+                        </tr>
+                        <tr>
+                     <td><font size = "5"></font><input type="text" name="sourceIP"></td>
+                     
+                     <td><font size = "5"></font><input type="text" name="subnet1"></td>
+                            </tr>
+                            </table>
+                    <br>
+                        <table>
+                            <tr>
+                            <th><font color=red>*</font>Destination IP</th>
+                            <th><font color=red>*</font>Subnet Mask</th> 
+                        </tr>
+                        <tr>
+                     <td><font size = "5"></font><input type="text" name="destinationIP"></td>
+                     
+                     <td><font size = "5"></font><input type="text" name="subnet2"></td>
+                            </tr>
+                            </table>
+                    
+                        
+                     <em><b><font size = "5"></font><input type="submit" name = "submit2" value="Execute!"></b></em><br><br>
+                    
+                     
+</form>
+     <center><h4 style=" bottom: 0; width:100%; text-align: center">A TLEN5710 Project<br>~by Forum Mehta, Sourav Jain, Rushi Shah, and Suganya Manoharan</h4></center>
+    </body>
+
+
+
+
+
+
+
+
+</html>
